@@ -1,23 +1,19 @@
-const calculation = {
-    add : function(firstNum, secondNum) {
-        console.log(firstNum + secondNum);
-    },
-    sub : function(firstNum, secondNum) {
-        console.log(firstNum - secondNum);
-    },
-    mul : function(firstNum, secondNum) {
-        console.log(firstNum * secondNum);
-    },
-    div : function(firstNum, secondNum) {
-        console.log(firstNum / secondNum);
-    },
-    power: function(firstNum, secondNum) {
-        console.log(firstNum ** secondNum);
-    },
-}
+const age = parseInt(prompt("How old are you?"));
 
-calculation.add(100, 20);
-calculation.sub(100, 20);
-calculation.mul(100, 20);
-calculation.div(100, 20);
-calculation.power(10, 3);
+console.log(age === 100);
+
+if (isNaN(age)) {
+    console.log("Plese write a Number");
+} else {
+    if (age < 18) {
+        console.log("You are too young.");
+    } else if (age >= 18 && age <= 50) {
+        console.log("You can drink!");
+    } else if (age > 50 && age <= 80) {
+        console.log("You should exercise");
+    } else if (age > 80) {
+        console.log();
+    } else if (age === 100) {
+        console.log("wow you are wise");
+    }
+}
