@@ -11,9 +11,13 @@ const calculation = {
     div : function(firstNum, secondNum) {
         console.log(firstNum / secondNum);
     },
+    power: function(firstNum, secondNum) {
+        console.log(firstNum ** secondNum);
+    },
 }
 
 calculation.add(100, 20);
 calculation.sub(100, 20);
 calculation.mul(100, 20);
 calculation.div(100, 20);
+calculation.power(10, 3);
