@@ -1,9 +1,15 @@
-const h1 = document.querySelector("div.hello:first-child h1");
-// console.dir(h1);
+// const loginFrom = document.querySelector("#login-form");
+// const loginInput = loginFrom.querySelector("input");
+// const loginButton = loginFrom.querySelector("button");
 
-function superEventHandler() {
-  const clickedClass = "clicked";
-  h1.classList.toggle(clickedClass);
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+
+function onLoginSubmit(tomato) {
+  tomato.preventDefault();
+  console.log(tomato);
+  // const userName = loginInput.value;
+  // console.log(userName);
 }
 
-h1.addEventListener("click", superEventHandler);
+loginForm.addEventListener("submit", onLoginSubmit);
